@@ -11,3 +11,20 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Aliases
+alias gaa='git add -A'
+alias gai='git add --interactive'
+alias gac='git add -A && git commit'
+alias gco='git checkout'
+alias gp='git push'
+alias gr='cd `git-root`'
+alias gd='git diff'
+alias gl='git pull --rebase'
+alias gg='git grep --color -n'
+alias pp='git pull --rebase && git push'
+alias simpleserver='python -m SimpleHTTPServer 8000'
+
+# fasd
+eval "$(fasd --init auto)"
+alias j='fasd_cd -d'
